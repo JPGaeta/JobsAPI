@@ -11,7 +11,7 @@ const JobSchema = new moongose.Schema({
     required: [true, 'Position name is required'],
     maxlength: 100
   },
-  statue:{
+  status:{
     type: String,
     enum:['interview', 'declined', 'pending'],
     default: 'pending'
